@@ -1,0 +1,70 @@
+*{
+margin: 0; padding: 0; box-sizing: border-box;
+}
+
+.img-jumbo{
+	background-image: url('EXPLORE.jpg');
+	width: 100%;
+	height: 300px;
+}
+/* neon botton start */
+a{
+position: relative;
+display: inline-block;
+padding-right: 15px 30px;
+color: red;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-decoration: none;
+font-size: 24px;
+border: 1px solid  #15f4ee;
+cursor: pointer;
+border-radius: 45px;
+overflow: hidden;
+transition: 0.2s;
+}
+a:hover
+{
+color: orange; 
+/* background: #faa307; */
+box-shadow: 0 0 10px #15f4ee, 0 0 40px #15f4ee,0 0 80px #15f4ee;
+transition-delay: 0.25s;
+box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+0 5px 50px 0 #15f4ee inset: 0 5px 50px 0 #15f4ee;
+text-shadow:  0 5px 50px 0 #15f4ee, 0 5px 50px 0 #15f4ee;
+}
+a span{
+position: absolute;
+display: block;
+}
+a span:nth-child(1)
+{
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,#ffba08);
+}
+a:hover span:nth-child(1)
+{
+left: 100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg,transparent,#ffba08);
+}
+a:hover span:nth-child(3)
+{
+right: 100%;
+transition:1s;
+}
+/* NEON BUTTON PART CLOSED */
+
+/* .img-jumbo{
+	background-image: url('EXPLORE.jpg');
+} */

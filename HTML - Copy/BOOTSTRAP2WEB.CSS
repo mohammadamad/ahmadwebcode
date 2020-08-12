@@ -1,0 +1,353 @@
+*{
+margin: 0; padding: 0; box-sizing: border-box;
+}
+.bgimg{
+background-image:url('PORTFOLIO.jpg');
+background-size: 100% 100%;
+background-attachment: fixed;
+width: 100%;
+height: 650px;
+}
+
+
+/* neon botton start */
+a{
+position: relative;
+display: inline-block;
+padding-right: 15px 30px;
+color: red;
+text-transform: uppercase;
+letter-spacing: 0px;
+text-decoration: none;
+font-size: 24px;
+border: 1px solid  #ee6c4d;
+cursor: pointer;
+border-radius: 45px;
+overflow: hidden;
+transition: 0.2s;
+}
+a:hover
+{
+color: red; 
+background: #ee6c4d;
+box-shadow: 0 0 10px #ee6c4d, 0 0 40px #ee6c4d,0 0 80px #ee6c4d;
+transition-delay: 0.25s;
+box-shadow: 0 5px 50px 0 #ee6c4d inset, 0 5px 50px 0 #ee6c4d;
+0 5px 50px 0 #BA5624 inset: 0 5px 50px 0 #BA5624;
+text-shadow:  0 5px 50px 0 #ee6c4d, 0 5px 50px 0 #ee6c4d;
+}
+a span{
+position: absolute;
+display: block;
+}
+a span:nth-child(1)
+{
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,#ffba08);
+}
+a:hover span:nth-child(1)
+{
+left: 100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg,transparent,#ffba08);
+}
+a:hover span:nth-child(3)
+{
+right: 100%;
+transition:1s;
+}
+/* NEON BUTTON PART CLOSED */
+
+
+.headerset{
+padding-top: 240px;
+box-sizing: border-box;
+}
+.headerset h3{
+font-size: 40px;
+}
+.headerset h1{
+font-size: 70px;
+font-weight: bold;
+}
+/* .........GIRD OURSERVICES PART START......... */
+.ourservices{
+padding:100px 0px 60px;
+height: 600px;
+}
+.ourservices h1{
+font-size: 50px;
+font-weight: bold;
+}
+.rowsetting{
+margin: 70px 0px;
+}
+.imgsetting{
+border-radius: 50%;
+width: 100px;
+height: 100px;
+}
+.fa-shopping-cart{
+margin-top: 24px;
+}
+.fa-desktop{
+margin-top: 26px;
+}
+.fa-lock{
+margin-top: 24px;
+}
+.rowsetting p{
+padding: 10px;
+}
+.rowsetting h2{
+margin-top: 20px;
+font-weight: bold;
+font-size: 30px;
+}
+/* OUR SERVICES PART CLOSED */
+
+
+
+/* JUMBOTRON PART CSS START */
+.img-jumbo{
+	background-image: url('sky.jpg');
+	width: 100%;
+	height: 350px;
+}
+/* neon botton start */
+a{
+position: relative;
+display: inline-block;
+padding-right: 15px 30px;
+color: red;
+text-transform: uppercase;
+letter-spacing: 1px;
+text-decoration: none;
+font-size: 24px;
+border: 1px solid  #15f4ee;
+cursor: pointer;
+border-radius: 45px;
+overflow: hidden;
+transition: 0.2s;
+}
+a:hover
+{
+color: orange; 
+/* background: #faa307; */
+box-shadow: 0 0 10px #15f4ee, 0 0 40px #15f4ee,0 0 80px #15f4ee;
+transition-delay: 0.25s;
+box-shadow: 0 5px 50px 0 #15f4ee inset, 0 5px 50px 0 #15f4ee;
+0 5px 50px 0 #15f4ee inset: 0 5px 50px 0 #15f4ee;
+text-shadow:  0 5px 50px 0 #15f4ee, 0 5px 50px 0 #15f4ee;
+}
+a span{
+position: absolute;
+display: block;
+}
+a span:nth-child(1)
+{
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg,transparent,#ffba08);
+}
+a:hover span:nth-child(1)
+{
+left: 100%;
+transition:1s;
+}
+a span:nth-child(3)
+{
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg,transparent,#ffba08);
+}
+a:hover span:nth-child(3)
+{
+right: 100%;
+transition:1s;
+}
+/* JUMBOTRON PART CSS CLOSED */
+
+
+
+
+ /* CAR RUNNING EFFECT */
+
+.hero{
+	width: 100%;
+	height: 40vh;
+	background-image: url('sky.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.highway{
+	width: 500%;
+	height: 80px;
+	display: block;
+	background-image: url('road.jpg');
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: highway 10s linear infinite;
+
+}
+
+@keyframes highway{
+	100%{
+		transform: translateX(-3400px)
+	}
+}
+
+.city{
+	width: 500%;
+	height: 250px;
+	background-image: url('city.png');
+	position: absolute;
+	bottom: 80px;
+	left: 0;
+	right: 0;
+	display: block;
+	z-index: 1;
+	background-repeat: repeat-x;
+	animation: city 20s linear infinite;
+}
+
+@keyframes city
+     {
+  100%{
+  	transform: translateX(-1400px);
+  }
+
+}
+
+.car{
+	width: 250px;
+	left: 50%;
+	bottom: 50px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+
+}
+
+.car img{
+	width: 70%;
+	animation: car 1s linear infinite;
+}
+
+@keyframes car
+{
+	100%{
+		transform: translateY(-1px);
+	}
+
+	50%{
+		transform: translateY(1px);
+	}
+
+	0%{
+		transform: translateY(-1px);
+	}
+}
+
+.wheel{
+	left: 50%;
+	bottom: 86px;
+	transform: translateX(-50%);
+	position: absolute;
+	z-index: 2;
+}
+
+.wheel img{
+	width: 36px;
+	height: 36px;
+	animation: wheel 1s linear infinite;
+}
+
+.back-wheel{
+	left: -76px;
+	position: absolute;
+	
+}
+
+.front-wheel{
+	left: 35px;
+	position: absolute;
+	
+}
+
+@keyframes wheel
+{
+   100%{
+   	transform: rotate(360deg);
+   }
+}
+
+
+/* OUR TEAM PART CSS START */
+.ourteam{
+width: 100%;
+height: 700px;
+padding: 100px 0px 60px;
+}
+.ourteam h2{
+font-size: 40px;
+font-weight: bold;
+}
+.teamsetting{
+margin-top: 70px;
+}
+/* ..............MAKE RESPONSIVE USING MEDIA QUERY................. */
+@media(min-width: 992px){
+}
+@media(min-width: 768px)and (max-width: 991px){
+.headerset h3{
+font-size: 30px;
+}
+.headerset h1{
+font-size: 60px;
+font-weight: bold;
+}
+}
+@media(min-width: 575px)and (max-width: 767px){
+}
+@media(min-width: 480px)and (max-width: 574px){
+}
+@media(max-width: 479px){
+.headerset h3{
+font-size: 20px;
+}
+.headerset h1{
+font-size: 40px;
+font-weight: bold;
+}
+.ourservices{
+height: 1100px;
+}
+.portfolio{
+height: 2450px;
+}
+.ourteam{
+height: 1400px;
+}
+}
